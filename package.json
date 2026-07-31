@@ -1,0 +1,23 @@
+{
+  "name": "crisis-monitor.github.io",
+  "version": "1.0.0",
+  "description": "Public user documentation for Crisis Monitor.",
+  "type": "module",
+  "private": false,
+  "scripts": {
+    "dev": "blume dev",
+    "check": "blume check",
+    "validate": "blume validate",
+    "build": "blume build"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.9.0",
+      "onFail": "download"
+    }
+  },
+  "devDependencies": {
+    "blume": "1.2.1"
+  }
+}

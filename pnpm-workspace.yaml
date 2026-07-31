@@ -1,0 +1,6 @@
+allowBuilds:
+  esbuild: true
+minimumReleaseAgeExclude:
+  - blume@1.2.1
+overrides:
+  '@vercel/oidc': 3.8.0
