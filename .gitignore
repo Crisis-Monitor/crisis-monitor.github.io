@@ -1,6 +1,5 @@
 node_modules/
 dist/
+.blume/
 .cache/
 .DS_Store
-
-.blume/

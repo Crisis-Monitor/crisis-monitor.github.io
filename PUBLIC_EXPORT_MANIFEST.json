@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/export-public-site.mjs",
+  "generatedAt": "2026-07-31T03:01:57.442Z",
+  "sourceRepo": "Crisis-Monitor/Crisis-Monitor-Docs",
+  "targetRepo": "Crisis-Monitor/crisis-monitor.github.io",
+  "docsUrl": "https://crisis-monitor.github.io",
+  "include": [
+    "docs/**",
+    "Blume public config",
+    "Pages workflow",
+    "package lock/workspace"
+  ],
+  "excludesPrivateOperationalFiles": true
+}
+
