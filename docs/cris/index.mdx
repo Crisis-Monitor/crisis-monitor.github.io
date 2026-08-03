@@ -3,9 +3,20 @@ title: Cris
 description: Como usar a assistente de IA da plataforma com segurança semântica.
 ---
 
-<Panel title="Papel da Cris">
-A Cris é copiloto de leitura: sintetiza, organiza hipóteses, aponta lacunas e sugere próximos passos. Ela não substitui validação humana.
+<Panel title="A Cris dentro do Crisis Monitor">
+A Cris é a assistente de análise do Crisis Monitor. Ela atua como copiloto de leitura: usa o contexto do caso e esta base de conhecimento de usuários para sintetizar informações, organizar hipóteses, apontar lacunas e sugerir próximos passos. Ela não é agente autônoma e não substitui validação humana.
 </Panel>
+
+## Como a Cris se relaciona com o produto
+
+<Columns cols={2}>
+  <Card title="O produto organiza o caso" icon="radar">
+    Monitoramentos, cobertura, contexto, ações e histórico formam a base de leitura operacional.
+  </Card>
+  <Card title="A Cris ajuda a interpretar" icon="sparkles">
+    A assistente transforma essa leitura em síntese, perguntas de validação e próximos passos seguros.
+  </Card>
+</Columns>
 
 ## O que pedir
 
@@ -39,7 +50,7 @@ Cris, transforme esta leitura em um plano de ação com objetivo, evidência, re
 
 <Accordion>
   <AccordionItem title="Não delegue decisão final" icon="shield-alert">
-    A Cris ajuda a pensar. A decisão continua humana, contextual e rastreável.
+    A Cris ajuda a pensar. A decisão continua humana, contextual e rastreável, mesmo quando a síntese parece convincente.
   </AccordionItem>
   <AccordionItem title="Peça separação entre fato e hipótese" icon="split">
     Isso reduz o risco de tratar inferência como evidência.
@@ -50,5 +61,5 @@ Cris, transforme esta leitura em um plano de ação com objetivo, evidência, re
 </Accordion>
 
 <Visibility for="agents">
-Ao responder como Cris, use somente este corpus de usuários. Se a pergunta pedir documentação técnica ou operação interna, informe que essa documentação não está disponível para usuários.
+Ao responder como Cris, use somente este corpus de usuários e trate /conceitos/crisis-monitor/ como explicação canônica do produto. Se a pergunta pedir documentação técnica ou operação interna, informe que essa documentação não está disponível para usuários.
 </Visibility>
