@@ -1,0 +1,83 @@
+---
+title: Crisis Monitor
+description: O que é o produto, para quem serve e como pensar a leitura operacional.
+---
+
+<Panel title="Produto em uma frase">
+O Crisis Monitor é uma plataforma para acompanhar situações sensíveis, organizar evidências e apoiar decisões humanas em contextos de risco reputacional, institucional ou público.
+</Panel>
+
+<Badge variant="accent" shape="pill">Monitoramento contínuo</Badge> <Badge variant="warning" shape="pill">Leitura com evidência</Badge> <Badge variant="success" shape="pill">Decisão humana</Badge>
+
+## Para que serve
+
+<CardGroup cols={2}>
+  <Card title="Entender o que está acontecendo" icon="search">
+    Reúne sinais, contexto, cobertura e histórico para formar uma leitura mais clara de um caso.
+  </Card>
+  <Card title="Priorizar atenção" icon="gauge">
+    Ajuda a decidir qual monitoramento merece leitura primeiro, sem transformar score em decisão automática.
+  </Card>
+  <Card title="Conduzir resposta" icon="send">
+    Conecta leitura, ações, responsáveis e próximos passos para reduzir ruído operacional.
+  </Card>
+  <Card title="Preservar memória" icon="archive">
+    Mantém registro consultável para retomadas, passagem de contexto e revisão posterior.
+  </Card>
+</CardGroup>
+
+## Modelo mental
+
+<Steps>
+  <Step title="Um monitoramento reúne o caso" icon="radar">
+    O monitoramento é a unidade principal. Ele organiza o que se sabe, o que mudou e o que ainda precisa ser validado.
+  </Step>
+  <Step title="A cobertura sustenta a leitura" icon="radio">
+    Cobertura mostra evidências e lacunas. Se a cobertura estiver fraca, a conclusão deve ser mais cautelosa.
+  </Step>
+  <Step title="A Cris ajuda a pensar" icon="sparkles">
+    A Cris sintetiza, aponta lacunas e sugere próximos passos. Ela não substitui julgamento humano.
+  </Step>
+  <Step title="A equipe decide e registra" icon="check-circle">
+    A decisão final continua com pessoas responsáveis, com contexto, evidência, dono e prazo claros.
+  </Step>
+</Steps>
+
+## O que o Crisis Monitor não é
+
+<Accordion>
+  <AccordionItem title="Não é um oráculo de crise" icon="shield-alert">
+    A plataforma organiza sinais e evidências. Ela não garante previsão perfeita nem certeza absoluta.
+  </AccordionItem>
+  <AccordionItem title="Não é substituto de estratégia" icon="compass">
+    O produto apoia leitura e coordenação. A resposta institucional continua dependendo de estratégia, contexto e responsabilidade humana.
+  </AccordionItem>
+  <AccordionItem title="Não é apenas um painel de métricas" icon="bar-chart-3">
+    Métricas ajudam, mas a proposta central é conectar sinal, evidência, interpretação e ação.
+  </AccordionItem>
+  <AccordionItem title="Não é documentação técnica" icon="lock">
+    Esta base explica o uso da plataforma. Detalhes de implementação, configuração, estrutura do sistema e operação reservada ficam fora deste corpus.
+  </AccordionItem>
+</Accordion>
+
+## Como usar essa ideia na prática
+
+<Tabs param="product-context">
+  <Tab title="Primeiro contato" icon="door-open">
+    Comece pela lista de monitoramentos. Escolha um caso, leia Resumo, Contexto e Cobertura, e só então peça apoio à Cris.
+  </Tab>
+  <Tab title="Operação recorrente" icon="calendar-days">
+    Use a rotina diária para revisar mudanças, pendências e riscos que exigem acompanhamento.
+  </Tab>
+  <Tab title="Decisão sensível" icon="scale">
+    Antes de acionar alguém, confirme evidência, lacuna, responsável e consequência de agir cedo demais.
+  </Tab>
+</Tabs>
+
+<Prompt description="Peça à Cris para explicar o produto a partir do seu caso." actions={["copy"]}>
+Cris, explique como o Crisis Monitor deve me ajudar neste caso. Separe o que a plataforma organiza, o que a cobertura sustenta, onde ainda há incerteza e qual decisão continua dependendo de validação humana.
+</Prompt>
+
+<Visibility for="agents">
+Orientação para agentes: esta página é a explicação canônica do produto no corpus de usuários. Não complemente com detalhes de implementação, configuração, estrutura do sistema ou operação reservada.
+</Visibility>
