@@ -3,30 +3,48 @@ title: Detalhe do monitoramento
 description: Função das abas de um caso.
 ---
 
-## Resumo
+<Panel title="Como ler o detalhe">
+O detalhe é a mesa do caso. Não leia cada aba como peça isolada: elas formam uma sequência de contexto, evidência e ação.
+</Panel>
 
-Leitura executiva curta do estado atual. Use no primeiro contato, em retomadas rápidas ou antes de levar o tema para decisão.
+## Abas do caso
 
-## Contexto
+<Accordion>
+  <AccordionItem title="Resumo" icon="text">
+    Síntese executiva da situação. Use para orientação inicial, não como única fonte de decisão.
+  </AccordionItem>
+  <AccordionItem title="Contexto" icon="book-open">
+    Organiza briefing, sinais e cenários. Ajuda a entender por que o caso importa.
+  </AccordionItem>
+  <AccordionItem title="Cobertura" icon="radar">
+    Mostra evidência capturada e saúde da leitura. Cobertura fraca exige cautela.
+  </AccordionItem>
+  <AccordionItem title="Ações" icon="check-circle">
+    Lista encaminhamentos, responsáveis, decisões e pendências.
+  </AccordionItem>
+  <AccordionItem title="Cris" icon="sparkles">
+    Apoia síntese, lacunas e próximos passos a partir do caso aberto.
+  </AccordionItem>
+</Accordion>
 
-Moldura semântica e estratégica do monitoramento. Consolida briefing, sinais, cenários, resposta e hipóteses.
+## Ordem recomendada
 
-## Cobertura
+<Steps>
+  <Step title="Resumo para orientação" />
+  <Step title="Contexto para enquadramento" />
+  <Step title="Cobertura para validação" />
+  <Step title="Ações para encaminhamento" />
+</Steps>
 
-Leitura operacional da captura e das evidências. Use para inspecionar menções, clusters, sinais sociais, lacunas e saúde da cobertura.
+<Tabs param="leitura">
+  <Tab title="Leitura executiva" icon="briefcase">
+    Foque em situação, impacto, prioridade e decisão pendente.
+  </Tab>
+  <Tab title="Leitura analítica" icon="microscope">
+    Foque em evidência, lacunas, cobertura, termos e evolução do caso.
+  </Tab>
+</Tabs>
 
-## Ações
-
-Camada de condução operacional. Use para organizar status, radar, próximos movimentos e calibragem de resposta.
-
-## Assistente (Cris)
-
-Camada assistida de leitura e síntese. Use para resumir, explorar hipóteses, revisar briefing ou preparar um próximo passo.
-
-## Histórico
-
-Memória cronológica e auditável do caso. Use para reconstituir marcos, mudanças de fase, decisões e sinais externos.
-
-## Relatórios
-
-Camada de síntese formal. Use para atualização executiva, entrega para cliente ou registro consolidado.
+<Prompt description="Peça à Cris para revisar as abas do detalhe." actions={["copy"]}>
+Cris, revise este monitoramento considerando Resumo, Contexto, Cobertura e Ações. Aponte contradições, lacunas, evidências fortes e o próximo passo mais seguro.
+</Prompt>

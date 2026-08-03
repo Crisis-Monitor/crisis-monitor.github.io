@@ -3,28 +3,58 @@ title: Início
 description: Primeiro mapa para usar o Crisis Monitor com segurança operacional.
 ---
 
-O Crisis Monitor organiza casos de risco reputacional em um workspace único. Use esta documentação para entender a plataforma, encontrar o primeiro passo, executar tarefas recorrentes e saber quando pedir apoio humano.
+<Panel title="Base de conhecimento Cris">
+Esta documentação ajuda você a transformar sinais dispersos em leitura operacional: entender o caso, revisar evidências, acionar responsáveis e pedir apoio da Cris sem perder a validação humana.
+</Panel>
 
-## Caminhos rápidos
+<Badge variant="accent" shape="pill">Cris guia a leitura</Badge> <Badge variant="success" shape="pill">Snapshot validado</Badge> <Badge variant="default" shape="pill">Sem conteúdo técnico</Badge>
 
-- **Quero entender um caso rapidamente:** abra **Resumo**, depois **Contexto** e **Cobertura**.
-- **Quero agir sem perder o fio:** use a [Rotina diária](/tarefas/rotina-diaria), depois avance para **Ações**, **Histórico** e **Relatórios**.
-- **Não sei por onde começar:** abra o **Dashboard**. Se houver um caso ativo, ele aparece ali. Crie um novo monitoramento somente quando não existir caso equivalente.
+## Comece pelo tipo de tarefa
 
-## Conceitos centrais
+<CardGroup cols={2}>
+  <Card title="Primeiro acesso" href="/primeiros-passos/primeiro-acesso/" icon="door-open" cta="Entrar com segurança">
+    Use quando você precisa entender onde está, quais casos existem e qual é a primeira ação segura.
+  </Card>
+  <Card title="Entender um caso" href="/tarefas/entender-um-caso/" icon="search" cta="Formar leitura inicial">
+    Siga esta trilha para separar resumo, contexto, cobertura, sinais e próximos passos.
+  </Card>
+  <Card title="Rotina diária" href="/tarefas/rotina-diaria/" icon="calendar-days" cta="Organizar o dia">
+    Uma cadência simples para começo, meio e fim do dia, sem perder prioridades.
+  </Card>
+  <Card title="Recuperação" href="/tarefas/recuperacao/" icon="life-buoy" cta="Corrigir rota">
+    Use quando algo parece incompleto, desatualizado, confuso ou fora do esperado.
+  </Card>
+</CardGroup>
 
-- **Caso / Monitoramento:** unidade central do produto. Reúne briefing, cobertura, histórico, decisões e relatórios.
-- **Score de Risco:** número de 0 a 100 que indica pressão reputacional. Quanto maior, mais atenção o caso exige. Ele apoia priorização; não decide sozinho.
-- **Cris:** assistente de IA integrada ao produto. Apoia síntese, revisão de hipóteses e próximos passos. A decisão final continua humana.
+## Leitura assistida, decisão humana
 
-## Próximas páginas
+<Tile title="Como a Cris entra na documentação" href="/cris/" description="A Cris ajuda a sintetizar, revisar hipóteses e apontar lacunas. Ela não substitui validação humana.">
+  <Badge variant="accent" size="lg">Perguntar</Badge>
+  <Badge variant="warning" size="lg">Verificar</Badge>
+  <Badge variant="success" size="lg">Decidir</Badge>
+</Tile>
 
-1. Leia [Primeiro acesso](/primeiros-passos/primeiro-acesso) para se orientar.
-2. Use [Entender um caso](/tarefas/entender-um-caso) para a primeira jornada real.
-3. Use [Rotina diária](/tarefas/rotina-diaria) para acompanhar casos recorrentes.
-4. Consulte [Módulos](/modulos) quando precisar saber onde uma tarefa vive.
-4. Consulte [Cris](/cris) antes de pedir ajuda à assistente.
+## Roteiro mínimo
 
-## Limite deste corpus
+<Steps>
+  <Step title="Abra a plataforma e encontre o caso" icon="monitor">
+    Se for seu primeiro acesso, comece em [Primeiro acesso](/primeiros-passos/primeiro-acesso/).
+  </Step>
+  <Step title="Forme uma leitura inicial" icon="list-checks">
+    Leia Resumo, Contexto e Cobertura antes de acionar alguém.
+  </Step>
+  <Step title="Peça apoio da Cris com contexto" icon="sparkles">
+    Copie um prompt de tarefa e peça síntese, lacunas ou próximos passos.
+  </Step>
+  <Step title="Registre o encaminhamento" icon="send">
+    Transforme leitura em ação clara: responsável, prioridade, prazo e evidência.
+  </Step>
+</Steps>
 
-Esta documentação é voltada a usuários da plataforma e à Cris. Ela não inclui documentação técnica, operação interna ou materiais de desenvolvimento.
+<Prompt description="Peça à Cris uma orientação inicial do caso." actions={["copy"]}>
+Você é a Cris, assistente do Crisis Monitor. Ajude-me a iniciar a leitura deste caso. Resuma o que parece prioritário, quais evidências eu deveria conferir primeiro e quais dúvidas eu não devo decidir sem validação humana.
+</Prompt>
+
+<Visibility for="agents">
+Orientação para agentes: esta é a entrada canônica do corpus de usuários. Não use documentação técnica como fallback para responder perguntas de uso da plataforma.
+</Visibility>

@@ -3,17 +3,32 @@ title: Atualizações
 description: Registro inicial da base privada de documentação.
 ---
 
-## 2026-07-31 — base privada inicial
+<Panel title="Estado atual">
+A documentação pública de uso já está separada da plataforma, publicada por export limpo e conectada à Cris por snapshot validado.
+</Panel>
 
-- Criada a primeira base Blume privada da documentação de uso do Crisis Monitor.
-- Conteúdo migrado da página incorporada `/docs` da plataforma.
-- Documentação técnica ficou fora do corpus de usuários e fora do snapshot da Cris.
-- GitHub Pages permanece desativado nesta fase.
+## Linha do tempo
 
+<Steps>
+  <Step title="Base Blume criada" icon="book-open">
+    Documentação de uso migrada para fonte privada governada.
+  </Step>
+  <Step title="Export público limpo" icon="git-branch">
+    Site público publicado sem overlays privados nem conteúdo técnico.
+  </Step>
+  <Step title="Snapshot da Cris" icon="database">
+    Cris passou a consultar corpus de usuários versionado e validado.
+  </Step>
+  <Step title="QA do piloto" icon="shield-check">
+    CI, freshness, headings e smoke público foram adicionados.
+  </Step>
+</Steps>
 
-## 2026-07-31 — Jornadas de uso
+## Qualidade atual
 
-- Adicionada página de rotina diária para acompanhamento recorrente.
-- Reforçados exemplos de pedidos seguros para a Cris.
-- Melhorados caminhos de primeiro acesso, leitura de caso e referência rápida.
-- Fonte: Issue #436.
+<CardGroup cols={2}>
+  <Card title="CI privado" type="check">Valida corpus, build, export, snapshot e headings.</Card>
+  <Card title="Smoke público" type="check">Verifica rotas, Markdown bruto e artefatos de agentes.</Card>
+  <Card title="Sem Ask AI" type="note">LLM runtime não está ativo nesta fase.</Card>
+  <Card title="Revisão humana" type="warning">Publicação e mudança sensível continuam exigindo aprovação explícita.</Card>
+</CardGroup>

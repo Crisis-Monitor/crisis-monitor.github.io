@@ -3,34 +3,44 @@ title: Módulos
 description: O que cada área da plataforma faz e quando usar.
 ---
 
-## Dashboard
+<Panel title="Mapa mental">
+Pense nos módulos como uma sala de situação: lista para priorizar, detalhe para entender, Cris para apoiar leitura, Compare para comparar e Analytics para enxergar padrões.
+</Panel>
 
-Visão geral do workspace ativo. Use para priorizar casos, decidir por onde começar o dia ou encontrar um monitoramento específico.
+## Módulos principais
 
-## Monitoramentos
+<CardGroup cols={2}>
+  <Card title="Monitoramentos" icon="list" type="info">
+    Ponto de entrada para ver casos, status e sinais de prioridade.
+  </Card>
+  <Card title="Detalhe do monitoramento" href="/modulos/detalhe-do-monitoramento/" icon="panel-top" cta="Ver abas">
+    Onde a leitura do caso ganha contexto, cobertura, ações e evidência.
+  </Card>
+  <Card title="Cris" href="/cris/" icon="sparkles" type="tip">
+    Assistente para síntese, revisão de hipóteses e próximos passos seguros.
+  </Card>
+  <Card title="Compare e Analytics" icon="bar-chart-3" type="note">
+    Superfícies para priorização entre casos e leitura agregada da operação.
+  </Card>
+</CardGroup>
 
-Área de criação e gestão dos casos monitorados. Use ao abrir novos monitoramentos, revisar status ou entrar no detalhe de cada caso.
+## Quando usar cada módulo
 
-## Detalhe do monitoramento
+<Tabs param="modulo">
+  <Tab title="Priorizar" icon="list-filter">
+    Comece por Monitoramentos. Use status, recência e pendências para escolher onde atuar.
+  </Tab>
+  <Tab title="Entender" icon="book-open">
+    Vá para Detalhe. Leia Resumo, Contexto, Cobertura e Ações.
+  </Tab>
+  <Tab title="Apoiar" icon="sparkles">
+    Use a Cris para síntese e lacunas. Preserve validação humana.
+  </Tab>
+  <Tab title="Comparar" icon="scale">
+    Use Compare ou Analytics quando a pergunta envolve mais de um caso.
+  </Tab>
+</Tabs>
 
-Workspace completo de um caso específico. Use para manter briefing, leitura operacional, evolução, registro e síntese conectados.
-
-## Cris
-
-Assistente de análise da plataforma. Use para sintetizar contexto, sugerir próximos passos, revisar hipóteses e acelerar leitura sem esconder incerteza.
-
-## Compare
-
-Superfície comparativa entre monitoramentos. Use quando houver disputa por atenção ou necessidade de priorização executiva.
-
-## Analytics
-
-Camada de métricas e auditoria. Use para acompanhar KPIs, uso do wizard, auditoria de IA e sinais agregados do workspace.
-
-## Media Tiers
-
-Catálogo editorial das fontes monitoradas. Use para calibrar influência, cobertura mínima e relevância das fontes.
-
-## Configurações
-
-Área administrativa e operacional. Use para membros, convites, alertas, integrações, rotinas e checagens de saúde.
+<Expandable title="Limite importante">
+Nenhum módulo transforma sinal em decisão automática. A plataforma organiza evidências e recomenda caminhos; a decisão continua humana e contextual.
+</Expandable>
