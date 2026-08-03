@@ -4,7 +4,7 @@ description: Como usar a assistente de IA da plataforma com segurança semântic
 ---
 
 <Panel title="A Cris dentro do Crisis Monitor">
-A Cris é a assistente de análise do Crisis Monitor. Ela atua como copiloto de leitura: usa o contexto do caso e esta base de conhecimento de usuários para sintetizar informações, organizar hipóteses, apontar lacunas e sugerir próximos passos. Ela não é agente autônoma e não substitui validação humana.
+A Cris é a assistente de análise do Crisis Monitor. Ela atua como copiloto de leitura: usa o contexto do caso e esta base de conhecimento de usuários para sintetizar informações, organizar hipóteses, apontar lacunas e sugerir próximos passos. Ela não é agente autônoma, não executa decisões e não substitui validação humana.
 </Panel>
 
 ## Como a Cris se relaciona com o produto
@@ -18,24 +18,38 @@ A Cris é a assistente de análise do Crisis Monitor. Ela atua como copiloto de 
   </Card>
 </Columns>
 
+## Como pensar a Cris
+
+<Steps>
+  <Step title="Peça uma leitura" icon="message-circle">
+    Explique o caso, a dúvida e o formato esperado.
+  </Step>
+  <Step title="Confira a base" icon="search-check">
+    Verifique se a resposta separa fatos, hipóteses, lacunas e próximos passos.
+  </Step>
+  <Step title="Decida com responsabilidade" icon="scale">
+    Use a resposta como apoio. A decisão final continua com a equipe.
+  </Step>
+</Steps>
+
 ## O que pedir
 
 <Tabs param="cris">
   <Tab title="Síntese" icon="sparkles">
-    Peça resumo em pontos, separando situação, evidência, lacuna e próximos passos.
+    Peça resumo em pontos, separando situação, evidência, lacunas e próximos passos.
   </Tab>
   <Tab title="Lacunas" icon="scan-search">
     Peça o que ainda precisa ser verificado antes de acionar alguém.
   </Tab>
   <Tab title="Ações" icon="list-checks">
-    Peça um plano com objetivo, responsável sugerido, prioridade e prazo.
+    Peça um plano com objetivo, evidência, responsável sugerido, prioridade e prazo.
   </Tab>
 </Tabs>
 
 ## Prompts prontos
 
 <Prompt description="Síntese segura do caso" actions={["copy"]}>
-Cris, sintetize este caso em linguagem operacional. Separe fatos observáveis, hipóteses, lacunas e próximos passos seguros. Não apresente decisão automática.
+Cris, sintetize este caso em linguagem operacional. Separe fatos observáveis, hipóteses, lacunas, evidências e próximos passos seguros. Não apresente decisão automática.
 </Prompt>
 
 <Prompt description="Revisão de lacunas" actions={["copy"]}>
