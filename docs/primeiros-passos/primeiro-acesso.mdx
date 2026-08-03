@@ -3,42 +3,58 @@ title: Primeiro acesso
 description: Como entrar na plataforma e encontrar a primeira ação segura.
 ---
 
-Use esta página quando você entrou no Crisis Monitor e ainda não sabe por onde começar.
+<Panel title="Objetivo desta página">
+Entrar na plataforma, reconhecer a área de trabalho e chegar ao primeiro monitoramento sem depender de suporte.
+</Panel>
 
-## Antes de começar
+## Caminho seguro de entrada
 
-Você precisa ter acesso ao workspace correto. Dashboard, monitoramentos, analytics e permissões dependem do **workspace ativo**.
+<Steps>
+  <Step title="Confirme o workspace" icon="building-2">
+    Verifique se você está no workspace correto antes de interpretar qualquer caso.
+  </Step>
+  <Step title="Abra a lista de monitoramentos" icon="list">
+    Procure casos ativos, status e sinais de prioridade. Não comece por detalhes soltos.
+  </Step>
+  <Step title="Escolha um caso com intenção" icon="target">
+    Priorize o caso com maior atenção operacional, prazo ou risco percebido.
+  </Step>
+  <Step title="Abra o detalhe" icon="panel-top-open">
+    Use o detalhe para confirmar resumo, contexto, cobertura e ações relacionadas.
+  </Step>
+</Steps>
 
-## Passo a passo
+## O que observar primeiro
 
-1. Abra o **Dashboard**.
-2. Verifique se há monitoramentos ativos ou em atenção.
-3. Se houver um caso que pareça relacionado à sua demanda, abra o detalhe do monitoramento.
-4. Comece pela aba **Resumo**.
-5. Se o resumo não bastar, leia **Contexto** para entender o enquadramento e **Cobertura** para validar evidências.
-
-## Resultado esperado
-
-Você deve sair desta etapa sabendo qual caso observar e qual página usar para continuar.
+<Columns cols={2}>
+  <Card title="Sinal de prioridade" type="info">
+    Status, urgência, mudança recente ou risco de repercussão indicam onde começar.
+  </Card>
+  <Card title="Fonte da leitura" type="note">
+    Diferencie síntese assistida, evidência capturada e decisão humana registrada.
+  </Card>
+</Columns>
 
 ## Se algo parecer errado
 
-- Se o caso não aparece, confirme o workspace ativo.
-- Se a cobertura parece fraca ou desatualizada, vá para **Cobertura** e depois revise fontes, keywords e conectores com a pessoa responsável pela operação.
-- Se você não tiver permissão para acessar uma área, peça acesso ao administrador do workspace.
+<Accordion>
+  <AccordionItem title="Não encontrei o caso esperado" icon="search-x">
+    Confirme filtros, workspace e período. Se ainda não aparecer, use [Recuperação](/tarefas/recuperacao/).
+  </AccordionItem>
+  <AccordionItem title="A leitura parece incompleta" icon="circle-alert">
+    Confira Cobertura antes de interpretar o resumo como verdade completa.
+  </AccordionItem>
+  <AccordionItem title="Não sei qual caso priorizar" icon="list-filter">
+    Compare sinais de atenção, recência, prazo e impacto. Quando houver dúvida, peça à Cris uma priorização assistida.
+  </AccordionItem>
+</Accordion>
 
-
-## Primeiro resultado esperado
-
-Ao final do primeiro acesso, você deve saber:
-
-- onde ver os monitoramentos ativos;
-- qual caso abrir primeiro;
-- onde encontrar contexto, cobertura e ações;
-- quando pedir ajuda à Cris.
-
-Se não conseguir identificar o primeiro caso relevante, volte ao Dashboard e procure sinais de prioridade, mudança recente ou ação pendente.
+<Prompt description="Peça à Cris para orientar seu primeiro acesso." actions={["copy"]}>
+Cris, estou no meu primeiro acesso. Ajude-me a entender qual monitoramento devo abrir primeiro, quais sinais devo conferir e o que eu não devo concluir sem verificar a cobertura.
+</Prompt>
 
 ## Próximo passo
 
-Depois do primeiro acesso, siga para [Entender um caso](/tarefas/entender-um-caso). Se você já acompanha a operação, use [Rotina diária](/tarefas/rotina-diaria).
+<Card title="Entender um caso" href="/tarefas/entender-um-caso/" icon="arrow-right" cta="Continuar">
+Depois de escolher um monitoramento, siga a jornada de leitura inicial.
+</Card>

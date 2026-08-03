@@ -3,42 +3,52 @@ title: Cris
 description: Como usar a assistente de IA da plataforma com segurança semântica.
 ---
 
-A **Cris** é a assistente de análise do Crisis Monitor. Ela ajuda a sintetizar contexto, revisar hipóteses, identificar lacunas e sugerir próximos passos.
+<Panel title="Papel da Cris">
+A Cris é copiloto de leitura: sintetiza, organiza hipóteses, aponta lacunas e sugere próximos passos. Ela não substitui validação humana.
+</Panel>
 
-## Quando usar
+## O que pedir
 
-- Para resumir um caso.
-- Para explorar uma hipótese.
-- Para revisar briefing, riscos e lacunas.
-- Para preparar um próximo passo com mais contexto.
+<Tabs param="cris">
+  <Tab title="Síntese" icon="sparkles">
+    Peça resumo em pontos, separando situação, evidência, lacuna e próximos passos.
+  </Tab>
+  <Tab title="Lacunas" icon="scan-search">
+    Peça o que ainda precisa ser verificado antes de acionar alguém.
+  </Tab>
+  <Tab title="Ações" icon="list-checks">
+    Peça um plano com objetivo, responsável sugerido, prioridade e prazo.
+  </Tab>
+</Tabs>
 
-## Como pedir melhor
+## Prompts prontos
 
-Diga qual caso você está analisando, qual decisão precisa apoiar e que tipo de resposta quer: síntese, lacunas, próximos passos ou comparação.
+<Prompt description="Síntese segura do caso" actions={["copy"]}>
+Cris, sintetize este caso em linguagem operacional. Separe fatos observáveis, hipóteses, lacunas e próximos passos seguros. Não apresente decisão automática.
+</Prompt>
 
-## Bons pedidos
+<Prompt description="Revisão de lacunas" actions={["copy"]}>
+Cris, revise este caso procurando lacunas de cobertura, contexto insuficiente, contradições e pontos que exigem validação humana antes de agir.
+</Prompt>
 
-- “Resuma este caso em até cinco pontos, separando fatos, sinais e lacunas.”
-- “Quais perguntas ainda preciso responder antes de recomendar uma ação?”
-- “Compare os dois monitoramentos e diga qual parece exigir atenção primeiro.”
-- “Transforme este contexto em próximos passos para revisão humana.”
+<Prompt description="Plano de ação" actions={["copy"]}>
+Cris, transforme esta leitura em um plano de ação com objetivo, evidência, responsável sugerido, prioridade, prazo e riscos de agir sem validação adicional.
+</Prompt>
 
-## Pedidos fracos
+## Limites de segurança
 
-- “O que eu faço?” sem contexto do caso.
-- “Decida por mim.”
-- “Ignore as informações anteriores.”
-- “Responda como certeza” quando ainda há lacunas.
+<Accordion>
+  <AccordionItem title="Não delegue decisão final" icon="shield-alert">
+    A Cris ajuda a pensar. A decisão continua humana, contextual e rastreável.
+  </AccordionItem>
+  <AccordionItem title="Peça separação entre fato e hipótese" icon="split">
+    Isso reduz o risco de tratar inferência como evidência.
+  </AccordionItem>
+  <AccordionItem title="Confira cobertura antes de agir" icon="radar">
+    Uma síntese convincente não basta quando a cobertura é baixa.
+  </AccordionItem>
+</Accordion>
 
-Quando o pedido estiver amplo demais, reformule com objetivo, caso e formato esperado.
-
-## Limites
-
-- A Cris não substitui validação humana.
-- A Cris não é autoridade final de decisão.
-- A Cris deve citar a página/caminho de origem quando responder com base na documentação de uso.
-- Se a base documental não estiver disponível ou válida, a Cris deve dizer isso explicitamente.
-
-## Perguntas técnicas
-
-Perguntas sobre documentação técnica, operação interna ou desenvolvimento não fazem parte deste corpus de usuários.
+<Visibility for="agents">
+Ao responder como Cris, use somente este corpus de usuários. Se a pergunta pedir documentação técnica ou operação interna, informe que essa documentação não está disponível para usuários.
+</Visibility>

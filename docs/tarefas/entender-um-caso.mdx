@@ -3,43 +3,53 @@ title: Entender um caso
 description: Jornada curta para formar uma leitura inicial sem perder evidências.
 ---
 
-Use esta jornada quando precisa formar uma leitura inicial de um monitoramento.
+<Panel title="Quando usar">
+Use esta página quando você abriu um monitoramento e precisa formar uma leitura inicial antes de decidir ou acionar alguém.
+</Panel>
 
-## Ordem recomendada
+## Trilha de leitura
 
-1. **Resumo:** leia o estado executivo do momento.
-2. **Contexto:** confirme briefing, sinais, cenários e hipóteses.
-3. **Cobertura:** verifique menções, clusters, sinais sociais, lacunas e saúde da captura.
+<Steps>
+  <Step title="Comece pelo Resumo" icon="text">
+    Identifique o que mudou, por que importa e qual é a hipótese operacional dominante.
+  </Step>
+  <Step title="Abra Contexto" icon="book-open">
+    Procure briefing, sinais, cenários e elementos que expliquem por que o caso existe.
+  </Step>
+  <Step title="Confira Cobertura" icon="radar">
+    Valide se há evidência suficiente. Cobertura baixa pede cautela antes de concluir.
+  </Step>
+  <Step title="Leia Ações" icon="check-circle">
+    Veja se já existe encaminhamento, responsável ou decisão registrada.
+  </Step>
+</Steps>
 
-## Como verificar que funcionou
+## Leitura por situação
 
-Você deve conseguir responder:
+<Tabs param="situacao">
+  <Tab title="Primeira leitura" icon="search">
+    Priorize o que responde: o que aconteceu, qual risco está crescendo e qual evidência sustenta a síntese.
+  </Tab>
+  <Tab title="Revisão rápida" icon="refresh-cw">
+    Compare o resumo atual com a última leitura. Procure mudança de prioridade, cobertura e ação pendente.
+  </Tab>
+  <Tab title="Antes de acionar" icon="send">
+    Garanta que o pedido tem contexto, evidência, responsável e prazo. Evite encaminhar só uma impressão.
+  </Tab>
+</Tabs>
 
-- o que aconteceu;
-- por que importa;
-- qual é o nível de atenção atual;
-- quais evidências sustentam a leitura;
-- qual é o próximo passo provável.
+## Palavras que merecem cuidado
 
-## Recuperação
+Ao ler o caso, trate <Tooltip headline="Atenção" tip="Sinal de prioridade, não decisão automática.">Attention Score</Tooltip>, cobertura e resumo como apoio à decisão. Eles organizam a leitura, mas não substituem julgamento humano.
 
-Se a leitura parecer contraditória, não trate o score como verdade única. Revise a cobertura e peça à Cris uma síntese com lacunas explícitas.
+<Expandable title="Checklist de evidência antes de concluir">
+- O resumo tem evidências recentes?
+- A cobertura está suficiente para o tipo de risco?
+- Há lacuna explícita que precisa de validação?
+- Existe ação já tomada ou pendente?
+- A Cris deixou claro o que é hipótese e o que é fato?
+</Expandable>
 
-
-## Checklist de leitura
-
-Antes de considerar o caso entendido, confirme:
-
-- qual é o fato central;
-- quem é afetado;
-- o que mudou nas últimas horas ou dias;
-- qual decisão ou ação está pendente;
-- quais informações ainda são incertas.
-
-## Quando pedir ajuda à Cris
-
-Peça uma síntese quando houver excesso de sinais ou quando você precisar explicar o caso para outra pessoa. Um bom pedido é:
-
-> Resuma este caso em contexto, sinais recentes, riscos e lacunas para decisão humana.
-
-Use a resposta como apoio. Se a Cris apontar lacunas, registre-as antes de transformar a leitura em ação.
+<Prompt description="Peça à Cris uma síntese segura do caso." actions={["copy"]}>
+Cris, sintetize este caso em cinco pontos: situação atual, sinais de prioridade, evidências que sustentam a leitura, lacunas que preciso validar e próximos passos seguros. Separe fatos, hipóteses e recomendações.
+</Prompt>

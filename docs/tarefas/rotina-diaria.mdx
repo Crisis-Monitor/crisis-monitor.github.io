@@ -3,77 +3,55 @@ title: Rotina diária
 description: Como revisar os monitoramentos no começo, meio e fim do dia sem perder prioridade.
 ---
 
-Use esta rotina quando você precisa acompanhar vários monitoramentos sem transformar a plataforma em uma lista infinita de leitura.
+<Panel title="Cadência recomendada">
+A rotina diária serve para não depender de memória: abrir, priorizar, revisar e encerrar o dia com rastreabilidade.
+</Panel>
 
-## Antes de começar
+## Três momentos do dia
 
-Você precisa ter acesso ao workspace e saber qual cliente, marca ou tema está acompanhando naquele dia.
+<Tabs param="rotina">
+  <Tab title="Começo" icon="sunrise">
+    <Steps>
+      <Step title="Revise casos ativos">Abra a lista e identifique mudanças desde a última leitura.</Step>
+      <Step title="Priorize atenção">Use status, recência e risco para escolher onde atuar primeiro.</Step>
+      <Step title="Peça síntese à Cris">Use a Cris para reduzir ruído, não para decidir sozinha.</Step>
+    </Steps>
+  </Tab>
+  <Tab title="Meio" icon="clock">
+    <Steps>
+      <Step title="Confira pendências">Veja se ações prometidas foram registradas ou concluídas.</Step>
+      <Step title="Reabra casos quentes">Atualize leitura quando houver sinal novo.</Step>
+      <Step title="Evite duplicidade">Não crie novo encaminhamento se já existe ação aberta.</Step>
+    </Steps>
+  </Tab>
+  <Tab title="Fim" icon="moon">
+    <Steps>
+      <Step title="Feche a leitura do dia">Registre o que mudou e o que segue pendente.</Step>
+      <Step title="Marque riscos para amanhã">Separe urgência real de acompanhamento comum.</Step>
+      <Step title="Prepare passagem de contexto">Se outra pessoa assumir, deixe contexto e fonte.</Step>
+    </Steps>
+  </Tab>
+</Tabs>
 
-## 1. Comece pelo Dashboard
+## Sinais de priorização
 
-Abra o **Dashboard** e observe três coisas:
+<CardGroup cols={3}>
+  <Card title="Mudança recente" type="warning">Algo novo pode exigir releitura.</Card>
+  <Card title="Cobertura fraca" type="note">Evite conclusão forte com evidência limitada.</Card>
+  <Card title="Ação pendente" type="info">Risco operacional costuma viver no que ficou sem dono.</Card>
+</CardGroup>
 
-1. quais casos estão ativos;
-2. quais casos mudaram de prioridade;
-3. quais casos precisam de leitura humana antes de qualquer ação.
+<Prompt description="Peça à Cris uma revisão diária dos monitoramentos." actions={["copy"]}>
+Cris, ajude-me a revisar a rotina de hoje. Liste casos que merecem atenção, mudanças desde a última leitura, pendências sem responsável claro e riscos que devem entrar no passagem de contexto.
+</Prompt>
 
-**Resultado esperado:** você sai com uma lista curta de casos para revisar primeiro.
+## Recuperação rápida
 
-Se tudo parecer igualmente urgente, comece pelos casos com maior risco, maior exposição pública ou decisão pendente.
-
-## 2. Abra o caso mais importante
-
-No caso, leia nesta ordem:
-
-1. **Resumo** — para entender o estado geral;
-2. **Contexto** — para lembrar o histórico e o motivo do monitoramento;
-3. **Cobertura** — para ver sinais recentes;
-4. **Ações** — para verificar encaminhamentos abertos.
-
-**Resultado esperado:** você entende se o caso está estável, em atenção ou exigindo resposta.
-
-## 3. Atualize o que mudou
-
-Registre somente mudanças que ajudam decisão:
-
-- novo fato relevante;
-- nova reação pública;
-- mudança de prioridade;
-- decisão tomada;
-- próximo responsável ou próxima ação.
-
-Evite registrar leitura duplicada ou opinião sem evidência clara.
-
-## 4. Use a Cris para reduzir ruído
-
-Peça ajuda à Cris quando precisar sintetizar ou comparar informações.
-
-Exemplos de pedido:
-
-- “Resuma o estado deste caso em três pontos.”
-- “Quais lacunas ainda impedem uma decisão?”
-- “Que próximo passo é mais seguro com base no que está registrado?”
-
-A resposta da Cris deve apoiar a leitura. A decisão final continua humana.
-
-## 5. Feche o ciclo do dia
-
-Antes de encerrar, confirme:
-
-- quais casos continuam ativos;
-- quais ações ficaram pendentes;
-- quem precisa receber atualização;
-- se há relatório, síntese ou registro que precisa ser preparado.
-
-**Resultado esperado:** o próximo leitor entende o estado do caso sem depender da sua memória.
-
-## Quando algo parece errado
-
-Se cobertura, score ou contexto parecerem incoerentes:
-
-1. volte ao histórico do caso;
-2. compare com a cobertura mais recente;
-3. registre a dúvida como lacuna;
-4. peça revisão humana antes de agir como se o dado estivesse confirmado.
-
-Consulte também [Recuperação e dúvidas comuns](/tarefas/recuperacao).
+<Accordion>
+  <AccordionItem title="Tenho muitos casos abertos" icon="list-filter">
+    Ordene por recência, prioridade e pendências. Se ainda houver excesso, escolha os três que podem mudar decisão hoje.
+  </AccordionItem>
+  <AccordionItem title="Não sei se algo mudou" icon="refresh-cw">
+    Compare resumo atual, cobertura e ações com a última leitura registrada.
+  </AccordionItem>
+</Accordion>

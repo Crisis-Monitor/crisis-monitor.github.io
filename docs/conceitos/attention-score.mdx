@@ -3,14 +3,34 @@ title: Attention Score
 description: Como interpretar o indicador de atenção sem automatizar decisões.
 ---
 
-O **Attention Score** é um indicador sintético de atenção do caso. Ele ajuda a priorizar leitura e ação, mas não substitui julgamento humano.
+<Panel title="Definição curta">
+Attention Score é um sinal de atenção operacional. Ele ajuda a priorizar leitura, mas não decide sozinho o que fazer.
+</Panel>
 
-## Como usar
+## Como interpretar
 
-- Use para comparar pressão relativa entre casos.
-- Combine o score com cobertura, contexto e histórico.
-- Revise evidências antes de tomar uma decisão sensível.
+<Columns cols={2}>
+  <Card title="Use para priorizar" type="tip">
+    Um score alto sugere que vale abrir o caso e verificar contexto, cobertura e ações.
+  </Card>
+  <Card title="Não use como sentença" type="warning">
+    Score não substitui evidência, julgamento humano nem conhecimento do contexto político ou institucional.
+  </Card>
+</Columns>
 
-## Limite
+## Leitura segura
 
-Um score alto indica necessidade de atenção. Ele não define sozinho a resposta, a fase do caso ou a comunicação externa.
+<Steps>
+  <Step title="Veja o score" />
+  <Step title="Confirme cobertura" />
+  <Step title="Leia contexto" />
+  <Step title="Decida com evidência" />
+</Steps>
+
+<Expandable title="Pergunta útil para a Cris">
+Peça para a Cris explicar por que um caso merece atenção e quais evidências precisam ser verificadas antes de agir.
+</Expandable>
+
+<Prompt description="Peça uma leitura cautelosa do Attention Score." actions={["copy"]}>
+Cris, interprete o Attention Score deste caso com cautela. Explique por que ele pode merecer atenção, quais evidências sustentam essa leitura e quais limites devo considerar antes de decidir.
+</Prompt>

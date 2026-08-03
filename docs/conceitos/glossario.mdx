@@ -3,42 +3,49 @@ title: Glossário
 description: Termos essenciais usados na plataforma.
 ---
 
-## Cobertura
+<Panel title="Como usar">
+Use o glossário para alinhar linguagem antes de interpretar um caso ou pedir ajuda à Cris.
+</Panel>
 
-Leitura das evidências capturadas e da saúde dessa captura. Não use como sinônimo de volume bruto.
+## Termos essenciais
 
-## Briefing
+<Accordion>
+  <AccordionItem title="Monitoramento" icon="radar">
+    Caso acompanhado pela plataforma. Reúne sinais, contexto, cobertura, leitura assistida e ações.
+  </AccordionItem>
+  <AccordionItem title="Resumo" icon="text">
+    Síntese inicial do caso. Deve ser conferida com contexto e cobertura.
+  </AccordionItem>
+  <AccordionItem title="Contexto" icon="book-open">
+    Informações que explicam cenário, briefing, sinais e hipóteses do caso.
+  </AccordionItem>
+  <AccordionItem title="Cobertura" icon="radio">
+    Evidência capturada para sustentar ou limitar a leitura.
+  </AccordionItem>
+  <AccordionItem title="Ação" icon="check-circle">
+    Encaminhamento operacional com objetivo, dono, prazo ou estado.
+  </AccordionItem>
+  <AccordionItem title="Cris" icon="sparkles">
+    Assistente de IA da plataforma. Ajuda a sintetizar, revisar hipóteses e sugerir próximos passos.
+  </AccordionItem>
+  <AccordionItem title="Attention Score" icon="gauge">
+    Sinal de prioridade. Ajuda a escolher onde olhar primeiro, sem automatizar decisão.
+  </AccordionItem>
+  <AccordionItem title="Compare" icon="scale">
+    Área para comparar casos e apoiar priorização entre monitoramentos.
+  </AccordionItem>
+  <AccordionItem title="Analytics" icon="bar-chart-3">
+    Visão agregada para acompanhar padrões, uso e leitura operacional.
+  </AccordionItem>
+  <AccordionItem title="Passagem de contexto" icon="handshake">
+    Passagem de contexto para outra pessoa ou momento, com fonte, pendência e próximo passo.
+  </AccordionItem>
+</Accordion>
 
-Contexto-base do caso: o que aconteceu, por que importa, sinais a observar, riscos e enquadramento inicial.
+## Termos em contexto
 
-## Narrativa
-
-Padrão recorrente de interpretação ou enquadramento que aparece nas menções.
-
-## Escalada
-
-Mudança relevante de intensidade, atenção ou risco percebido.
-
-## Attention Score
-
-Indicador sintético de atenção do caso. Use para priorização. Não trate como verdade única ou decisão automática.
-
-## Tier
-
-Classificação editorial da influência de uma fonte. Para público menos técnico, prefira “nível de influência da fonte”.
-
-## Sinal fraco
-
-Indício inicial ainda pouco confirmado, mas que pode ganhar relevância se houver contexto ou repetição.
-
-## Radar
-
-Camada de configuração e leitura dos eventos de escalada.
-
-## Workspace ativo
-
-Organização atualmente selecionada na sessão. Dashboard, analytics e permissões dependem deste contexto.
-
-## Cris
-
-Assistente de análise da plataforma. Apoia síntese, revisão assistida e leitura. Não é agente autônomo de decisão.
+<CardGroup cols={3}>
+  <Card title="Evidência" type="info">O que sustenta a leitura.</Card>
+  <Card title="Hipótese" type="note">Interpretação ainda sujeita a validação.</Card>
+  <Card title="Decisão" type="warning">Ato humano, não automático.</Card>
+</CardGroup>
