@@ -28,7 +28,22 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm run validate
-      - run: pnpm run build
+      - name: Build Blume site with transient fetch retry
+        run: |
+          set -euo pipefail
+          for attempt in 1 2 3; do
+            echo "Build attempt $attempt/3"
+            if pnpm run build; then
+              exit 0
+            fi
+            if [ "$attempt" = "3" ]; then
+              echo "Build failed after 3 attempts"
+              exit 1
+            fi
+            sleep $((attempt * 20))
+          done
+        env:
+          ASTRO_TELEMETRY_DISABLED: '1'
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
