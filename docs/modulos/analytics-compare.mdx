@@ -1,0 +1,86 @@
+---
+title: Analytics e Compare
+description: Quando usar leitura agregada ou comparação entre casos, quais perguntas cada módulo responde e quais limites considerar.
+---
+
+<Panel title="Regra de escolha">
+Use Compare quando a pergunta envolve diferenças entre casos. Use Analytics quando a pergunta envolve padrões, volume, tendência ou distribuição da operação.
+</Panel>
+
+## O que cada módulo responde
+
+<CardGroup cols={2}>
+  <Card title="Compare" icon="scale" type="info">
+    Ajuda a comparar dois ou mais monitoramentos para entender prioridade relativa, diferença de cobertura, atenção e maturidade de evidência.
+  </Card>
+  <Card title="Analytics" icon="bar-chart-3" type="note">
+    Ajuda a observar padrões agregados: evolução, concentração, recorrência, categorias, status e sinais que atravessam vários casos.
+  </Card>
+</CardGroup>
+
+## Quando usar Compare
+
+<Steps>
+  <Step title="Escolha casos comparáveis" icon="list-checks">
+    Compare casos que tenham relação operacional: mesmo tema, território, período, stakeholder ou tipo de risco.
+  </Step>
+  <Step title="Defina a pergunta" icon="help-circle">
+    Pergunte o que precisa decidir: qual caso priorizar, qual tem cobertura mais forte, qual exige revisão ou qual parece mais incerto.
+  </Step>
+  <Step title="Leia diferenças, não só números" icon="split">
+    Diferença de atenção pode vir de cobertura, ruído, fonte repetida, recência ou lacuna. Compare a explicação por trás do sinal.
+  </Step>
+  <Step title="Registre o limite" icon="circle-alert">
+    Se um caso tem cobertura baixa, não trate a comparação como ranking definitivo.
+  </Step>
+</Steps>
+
+## Quando usar Analytics
+
+<Tabs param="analytics">
+  <Tab title="Rotina" icon="calendar-days">
+    Use para saber como a carteira evolui: casos ativos, pendentes, recentes ou concentrados em temas específicos.
+  </Tab>
+  <Tab title="Priorização" icon="list-filter">
+    Use para encontrar grupos que exigem atenção: muitos sinais recentes, lacunas recorrentes ou concentração de risco.
+  </Tab>
+  <Tab title="Aprendizado" icon="chart-no-axes-combined">
+    Use para revisar padrões depois de uma semana ou ciclo: o que se repetiu, o que gerou ruído e onde a cobertura falhou.
+  </Tab>
+</Tabs>
+
+## Como interpretar sem exagerar
+
+<Accordion>
+  <AccordionItem title="Número alto não é decisão automática" icon="shield-alert">
+    Um valor alto pede leitura. Ele não substitui contexto, evidência, fonte e responsabilidade humana.
+  </AccordionItem>
+  <AccordionItem title="Tendência precisa de período" icon="clock">
+    Antes de concluir que algo aumentou ou caiu, confira janela de tempo, recência e mudança de cobertura.
+  </AccordionItem>
+  <AccordionItem title="Comparação exige base semelhante" icon="scale">
+    Se os casos têm fontes, períodos ou critérios muito diferentes, compare com cautela e registre essa diferença.
+  </AccordionItem>
+  <AccordionItem title="Agregado pode esconder exceção" icon="scan-search">
+    Analytics ajuda a ver padrão, mas um caso crítico pode estar diluído no conjunto. Volte ao detalhe quando houver risco relevante.
+  </AccordionItem>
+</Accordion>
+
+<Prompt description="Peça à Cris uma leitura comparativa." actions={["copy"]}>
+Cris, compare estes monitoramentos com cautela. Separe diferenças de cobertura, atenção, evidência, lacunas, ruído provável e prioridade sugerida. Não apresente ranking definitivo sem explicar os limites.
+</Prompt>
+
+<Prompt description="Peça à Cris uma leitura agregada." actions={["copy"]}>
+Cris, leia estes sinais agregados da operação. Aponte padrões, concentrações, mudanças recentes, lacunas recorrentes e perguntas que ainda precisam de validação humana.
+</Prompt>
+
+## Próximo passo
+
+<CardGroup cols={2}>
+  <Card title="Gerenciar monitoramentos" href="/modulos/gerenciar-monitoramentos/" icon="list" cta="Voltar à carteira">
+    Use a leitura agregada para decidir quais casos revisar primeiro.
+  </Card>
+  <Card title="Relatórios e compartilhamento" href="/tarefas/relatorios-compartilhamento/" icon="file-text" cta="Preparar saída">
+    Transforme leitura comparativa ou agregada em comunicação revisável.
+  </Card>
+</CardGroup>
