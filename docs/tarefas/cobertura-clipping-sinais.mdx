@@ -1,0 +1,91 @@
+---
+title: Cobertura, clipping e sinais de apoio
+description: Como interpretar cobertura, clipping, fontes oficiais, ruído e lacunas antes de concluir ou agir.
+---
+
+<Panel title="Princípio de leitura">
+Cobertura não é volume bruto. Ela indica se a leitura tem sustentação suficiente para a pergunta que você está tentando responder.
+</Panel>
+
+## O que cada sinal ajuda a responder
+
+<CardGroup cols={2}>
+  <Card title="Cobertura" icon="radar" type="info">
+    Ajuda a saber se há material suficiente para sustentar uma leitura.
+  </Card>
+  <Card title="Clipping" icon="newspaper" type="note">
+    Mostra menções e registros úteis, mas ainda precisa de curadoria e contexto.
+  </Card>
+  <Card title="Fonte oficial" icon="landmark" type="tip">
+    Pode ancorar fatos institucionais, atos públicos ou evidências administrativas.
+  </Card>
+  <Card title="Sinais de apoio" icon="sparkles" type="warning">
+    Ajudam a interpretar, mas não substituem revisão humana nem validação de fonte.
+  </Card>
+</CardGroup>
+
+## Trilha segura
+
+<Steps>
+  <Step title="Comece pela pergunta" icon="help-circle">
+    Você quer entender repercussão, risco institucional, mudança recente, ruído ou necessidade de ação?
+  </Step>
+  <Step title="Confira a cobertura" icon="radar">
+    Veja se as fontes e o período são suficientes para responder à pergunta. Cobertura baixa pede cautela.
+  </Step>
+  <Step title="Leia o clipping com curadoria" icon="newspaper">
+    Separe menção útil, repetição, falso positivo e conteúdo sem relação clara com o caso.
+  </Step>
+  <Step title="Procure fonte oficial quando necessário" icon="landmark">
+    Para ato público, decisão institucional ou evidência administrativa, prefira fonte oficial antes de concluir.
+  </Step>
+  <Step title="Registre a lacuna" icon="circle-alert">
+    Quando algo faltar, nomeie a lacuna. Uma lacuna explícita é mais segura do que uma conclusão forte sem base.
+  </Step>
+</Steps>
+
+## Diagnóstico rápido
+
+<Tabs param="cobertura">
+  <Tab title="Cobertura suficiente" icon="check-circle">
+    A leitura pode avançar, desde que a evidência responda à pergunta e os limites estejam claros.
+  </Tab>
+  <Tab title="Cobertura baixa" icon="alert-triangle">
+    Evite conclusão forte. Revise fontes, keywords, período e peça uma síntese com lacunas explícitas.
+  </Tab>
+  <Tab title="Ruído alto" icon="volume-x">
+    Procure termos ambíguos, homônimos, fonte repetida ou menções fora do território do caso.
+  </Tab>
+  <Tab title="Fonte oficial ausente" icon="landmark">
+    Não trate ausência como negativa do fato. Registre que a fonte oficial ainda não foi confirmada.
+  </Tab>
+</Tabs>
+
+## Como agir diante de falso positivo
+
+<Accordion>
+  <AccordionItem title="A menção fala de outro tema" icon="split">
+    Marque como ruído ou ajuste keywords. Não use a menção como evidência do caso.
+  </AccordionItem>
+  <AccordionItem title="O nome é parecido, mas não é o mesmo ator" icon="user-x">
+    Confirme entidade, território e contexto. Nomes semelhantes exigem mais cuidado antes de classificar.
+  </AccordionItem>
+  <AccordionItem title="A fonte repete a mesma informação" icon="copy">
+    Repetição aumenta volume, mas nem sempre aumenta evidência. Procure origem ou confirmação independente.
+  </AccordionItem>
+</Accordion>
+
+<Prompt description="Peça à Cris uma revisão de cobertura e clipping." actions={["copy"]}>
+Cris, revise a cobertura e o clipping deste monitoramento. Separe evidências úteis, ruído provável, falso positivo, fonte oficial ausente, lacunas e conclusão segura que ainda pode ser feita.
+</Prompt>
+
+## Próximo passo
+
+<CardGroup cols={2}>
+  <Card title="Entender um caso" href="/tarefas/entender-um-caso/" icon="search" cta="Aplicar leitura">
+    Use a cobertura para sustentar a leitura inicial do caso.
+  </Card>
+  <Card title="Conduzir ações" href="/tarefas/conduzir-acoes/" icon="send" cta="Encaminhar com cautela">
+    Só encaminhe ação depois de explicitar evidência, lacuna e responsável.
+  </Card>
+</CardGroup>

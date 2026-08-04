@@ -1,0 +1,84 @@
+---
+title: Gerenciar monitoramentos
+description: Como acompanhar uma carteira de monitoramentos sem perder prioridade, status ou pendências.
+---
+
+<Panel title="Objetivo desta página">
+Usar a lista de monitoramentos como painel de operação: escolher onde entrar, o que revisar e qual pendência precisa de dono.
+</Panel>
+
+## Como pensar a lista
+
+A lista não é apenas um catálogo de casos. Ela mostra onde a atenção deve começar e quais monitoramentos precisam de revisão, ação ou recuperação.
+
+<CardGroup cols={3}>
+  <Card title="Status" type="info">Indica o estado operacional do monitoramento.</Card>
+  <Card title="Recência" type="note">Ajuda a perceber mudança, atualização ou silêncio relevante.</Card>
+  <Card title="Pendência" type="warning">Mostra o que pode ficar sem responsável se ninguém atuar.</Card>
+</CardGroup>
+
+## Rotina de gestão
+
+<Steps>
+  <Step title="Filtre antes de abrir" icon="list-filter">
+    Comece por status, prioridade, área ou período. Evite abrir casos em ordem aleatória.
+  </Step>
+  <Step title="Escolha por consequência" icon="target">
+    Priorize o monitoramento em que uma mudança hoje pode alterar decisão, comunicação ou resposta.
+  </Step>
+  <Step title="Abra o detalhe" icon="panel-top-open">
+    Confirme resumo, contexto, cobertura e ações antes de encaminhar qualquer leitura.
+  </Step>
+  <Step title="Revise pendências" icon="check-square">
+    Procure ações sem dono, prazo ou evidência. Pendência sem responsável é risco operacional.
+  </Step>
+  <Step title="Registre passagem de contexto" icon="handshake">
+    Ao trocar de responsável ou encerrar o turno, deixe claro o que mudou, o que falta e onde está a evidência.
+  </Step>
+</Steps>
+
+## Leitura por situação
+
+<Tabs param="gestao">
+  <Tab title="Muitos casos" icon="list-filter">
+    Reduza a lista aos casos com mudança recente, alta atenção ou ação pendente. Se ainda houver excesso, escolha os três que podem mudar decisão hoje.
+  </Tab>
+  <Tab title="Caso parado" icon="pause-circle">
+    Verifique se o silêncio é esperado, lacuna de cobertura ou falha de configuração. Não conclua estabilidade sem checar fontes.
+  </Tab>
+  <Tab title="Caso quente" icon="flame">
+    Abra o detalhe, confirme cobertura e peça à Cris uma síntese com fatos, hipóteses, lacunas e próximos passos.
+  </Tab>
+  <Tab title="Troca de turno" icon="repeat">
+    Faça uma passagem curta: casos prioritários, evidência recente, ações pendentes, riscos e próxima revisão esperada.
+  </Tab>
+</Tabs>
+
+## Erros comuns
+
+<Accordion>
+  <AccordionItem title="Abrir sempre o primeiro item da lista" icon="arrow-up-down">
+    A ordem visual pode não representar consequência. Use filtros e sinais de prioridade antes de abrir.
+  </AccordionItem>
+  <AccordionItem title="Confundir monitoramento com decisão" icon="shield-alert">
+    Monitoramento organiza sinais. Decisão exige contexto, evidência suficiente e responsabilidade humana.
+  </AccordionItem>
+  <AccordionItem title="Ignorar casos sem novidade" icon="eye-off">
+    Silêncio também pode ser sinal: pode indicar estabilidade, lacuna de cobertura ou fonte mal configurada.
+  </AccordionItem>
+</Accordion>
+
+<Prompt description="Peça à Cris para priorizar uma carteira de monitoramentos." actions={["copy"]}>
+Cris, ajude-me a priorizar esta carteira de monitoramentos. Destaque casos com mudança recente, cobertura fraca, ação pendente, risco de decisão e próximos passos com responsável sugerido.
+</Prompt>
+
+## Próximo passo
+
+<CardGroup cols={2}>
+  <Card title="Detalhe do monitoramento" href="/modulos/detalhe-do-monitoramento/" icon="panel-top" cta="Abrir detalhe">
+    Use o detalhe para validar a leitura antes de agir.
+  </Card>
+  <Card title="Rotina diária" href="/tarefas/rotina-diaria/" icon="calendar-days" cta="Organizar rotina">
+    Transforme gestão de monitoramentos em cadência de revisão.
+  </Card>
+</CardGroup>
