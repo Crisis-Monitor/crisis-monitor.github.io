@@ -1,0 +1,106 @@
+---
+title: Cris avançada
+description: Atalhos, templates operacionais e limites para usar a Cris em rotinas recorrentes com segurança.
+---
+
+<Panel title="Uso avançado não é autonomia automática">
+Usar a Cris melhor significa fazer perguntas mais claras, pedir separação entre fato e hipótese, exigir lacunas e revisar a saída antes de agir.
+</Panel>
+
+## Atalhos operacionais
+
+<CardGroup cols={2}>
+  <Card title="Síntese com lacunas" icon="scan-search" type="info">
+    Melhor para começar uma leitura sem esconder incerteza.
+  </Card>
+  <Card title="Revisão de prioridade" icon="list-filter" type="note">
+    Melhor para ordenar casos sem transformar score em decisão automática.
+  </Card>
+  <Card title="Auditoria recente" icon="history" type="tip">
+    Melhor para entender o que mudou desde a última revisão ou plantão.
+  </Card>
+  <Card title="Preparação de relatório" icon="file-text" type="warning">
+    Melhor para estruturar texto revisável antes de compartilhar.
+  </Card>
+</CardGroup>
+
+## Templates prontos
+
+<Tabs param="cris-avancada">
+  <Tab title="Plantão" icon="calendar-clock">
+    <Prompt description="Resumo de passagem de plantão" actions={["copy"]}>
+Cris, faça uma passagem de plantão deste monitoramento. Separe situação atual, mudança desde a última revisão, evidências, lacunas, pendências, prioridade sugerida e risco de agir sem validação adicional.
+    </Prompt>
+  </Tab>
+  <Tab title="Prioridade" icon="list-filter">
+    <Prompt description="Revisão de prioridade" actions={["copy"]}>
+Cris, revise a prioridade destes casos. Explique critérios, cobertura, atenção, lacunas, ruído provável e por que um caso deveria ser revisado antes do outro. Não use ranking sem justificativa.
+    </Prompt>
+  </Tab>
+  <Tab title="Esclarecimento" icon="messages-square">
+    <Prompt description="Perguntas de esclarecimento" actions={["copy"]}>
+Cris, antes de concluir, faça perguntas de esclarecimento sobre este caso. Separe perguntas sobre contexto, fonte, entidade, território, período, risco e responsabilidade.
+    </Prompt>
+  </Tab>
+  <Tab title="Auditoria" icon="history">
+    <Prompt description="Auditoria recente" actions={["copy"]}>
+Cris, revise o que mudou recentemente neste monitoramento. Separe novas evidências, sinais repetidos, ruído, lacunas resolvidas, lacunas abertas e próximo passo recomendado.
+    </Prompt>
+  </Tab>
+</Tabs>
+
+## Como pedir respostas melhores
+
+<Steps>
+  <Step title="Diga o objetivo" icon="target">
+    Explique se você quer entender, priorizar, revisar, relatar ou preparar uma ação.
+  </Step>
+  <Step title="Defina o formato" icon="layout-list">
+    Peça tópicos, tabela simples, checklist, perguntas ou rascunho de mensagem.
+  </Step>
+  <Step title="Exija separação semântica" icon="split">
+    Solicite fatos observáveis, hipóteses, evidências, lacunas e próximos passos em blocos separados.
+  </Step>
+  <Step title="Peça limites" icon="shield-alert">
+    Inclua sempre: “o que não posso concluir com segurança?”
+  </Step>
+  <Step title="Revise antes de agir" icon="search-check">
+    Confira cobertura, contexto e responsabilidade antes de transformar a resposta em decisão.
+  </Step>
+</Steps>
+
+## Aprovação e responsabilidade
+
+<Accordion>
+  <AccordionItem title="Quando pedir aprovação humana" icon="user-check">
+    Sempre que a saída puder gerar ação externa, comunicação sensível, priorização crítica ou interpretação de risco relevante.
+  </AccordionItem>
+  <AccordionItem title="Quando pedir mais contexto" icon="messages-square">
+    Quando a Cris responder com hipótese forte, fonte fraca, lacuna escondida ou recomendação sem critério claro.
+  </AccordionItem>
+  <AccordionItem title="Quando não usar a resposta" icon="ban">
+    Quando ela mistura fato e inferência, ignora cobertura baixa, inventa certeza ou propõe ação sem responsável e evidência.
+  </AccordionItem>
+  <AccordionItem title="Como manter rastreabilidade" icon="clipboard-check">
+    Ao aproveitar uma saída da Cris, registre a página/caso de origem, evidências revisadas, lacunas e decisão humana final.
+  </AccordionItem>
+</Accordion>
+
+<Expandable title="Limite de conhecimento">
+A Cris deve responder com base no contexto do caso e nesta documentação de usuários. Ela não deve expor detalhes internos de implementação, operação técnica ou governança privada.
+</Expandable>
+
+<Visibility for="agents">
+Ao atuar como Cris, trate esta página como referência para uso avançado orientado a segurança semântica. Recuse ou limite perguntas sobre detalhes internos de implementação, operação técnica ou governança privada.
+</Visibility>
+
+## Próximo passo
+
+<CardGroup cols={2}>
+  <Card title="Relatórios e compartilhamento" href="/tarefas/relatorios-compartilhamento/" icon="file-text" cta="Preparar saída">
+    Use templates da Cris para revisar relatórios antes de circular.
+  </Card>
+  <Card title="Analytics e Compare" href="/modulos/analytics-compare/" icon="bar-chart-3" cta="Comparar com limites">
+    Use a Cris para explicar padrões e diferenças sem criar decisão automática.
+  </Card>
+</CardGroup>
